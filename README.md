@@ -5,7 +5,9 @@ A Python package for computing RECIST 1.1 assessments from lesion measurements s
 
 To install the package, run the following command in your terminal:
 
-```pip install pyrecist```
+```bash
+pip install pyrecist
+```
 
 ## Features
 - RECIST classification for each follow-up study based exclusively on **target lesions**.
@@ -21,7 +23,9 @@ The CLI script takes a `.csv` file containing RECIST measurements and generates 
 
 For example, to evaluate the measurements on `example.csv` and save the results to `/home/example_user`, run:
 
-```pyrecist example.csv -o /home/example_user```
+```bash
+pyrecist example.csv -o /home/example_user
+```
 
 You can test the package using the synthetic measurements available in the `tests/data` directory.
 
@@ -38,4 +42,6 @@ The input should be a CSV file where each row represents a RECIST measurement ta
 
 Run `pyrecist -h` to see how to customize the name of the expected column headers. For example, if your CSV file contain the measurements in a column called `recist_measurements`, then you can run:
 
-```pyrecist example.csv -o /home/example_user --measurement_header recist_measurements```
+```bash
+pyrecist example.csv -o /home/example_user --measurement_header recist_measurements
+```
