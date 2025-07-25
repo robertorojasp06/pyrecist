@@ -1,0 +1,6 @@
+patient_id,current_date,baseline_date,nadir_date,current_burden,baseline_burden,min_burden,burden_difference_from_baseline,burden_percentual_variation_from_baseline,burden_difference_from_nadir,burden_percentual_variation_from_nadir,classification
+1,20220901,20220601,20220601,24,30,30,-6,-20,-6,-20,SD
+1,20221201,20220601,20220901,21,30,24,-9,-30,-3,-12.5,PR
+1,20230301,20220601,20221201,25.2,30,21,-4.8,-16,4.2,20,PR
+1,20230601,20220601,20221201,26,30,21,-4,-13.3333333333333,5,23.8095238095238,PD
+1,20230901,20220601,20221201,30,30,21,0,0,9,42.8571428571429,
