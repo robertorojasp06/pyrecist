@@ -45,3 +45,15 @@ Run `pyrecist -h` to see how to customize the name of the expected column header
 ```bash
 pyrecist example.csv -o /home/example_user --measurement_header recist_measurements
 ```
+
+## Programatic usage
+For programatic usage in Python, follow this example applied to the file `path/to/example.csv` having the measurement header `recist_measurement_mm`:
+```python
+reader = Reader()
+reader.required_headers.update({
+    'measurement': 'recist_measurement_mm',
+})
+reader.read_measurements('path/to/example.csv')
+evaluator = Evaluator(reader)
+classifications_df = evaluator.evaluate_recist()
+```
