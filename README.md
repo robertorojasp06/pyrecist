@@ -49,6 +49,10 @@ pyrecist example.csv -o /home/example_user --measurement_header recist_measureme
 ## Programatic usage
 For programatic usage in Python, follow this example applied to the file `path/to/example.csv` having the measurement header `recist_measurement_mm`:
 ```python
+from pyrecist.data import Reader
+from pyrecist.assessment import Evaluator
+
+
 reader = Reader()
 reader.required_headers.update({
     'measurement': 'recist_measurement_mm',
